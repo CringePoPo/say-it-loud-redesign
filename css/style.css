@@ -1,0 +1,477 @@
+hr {
+  border: 2px solid rgba(210, 199, 193, 0.5);
+  margin: 15px 0;
+}
+
+.wrapper {
+  background-color: #fdecd9;
+}
+
+.btn {
+  border: none;
+  background-color: #ea6564;
+  padding: 0.7rem 1.2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.meta-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bg-clr {
+  background-color: #fdecd9;
+}
+
+.search-content {
+  background-image: url("https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29uJTIwdHlwaW5nfGVufDB8fDB8fHww&w=1000&q=80");
+  background-position: center center;
+  background-size: cover;
+  height: 175px;
+}
+.search-content .search-container {
+  display: grid;
+  place-items: center;
+  margin-bottom: 15px;
+  width: 100%;
+  height: 100%;
+}
+.search-content .search-container h3 span {
+  color: #ea6564;
+  border-bottom: 3px solid #ea6564;
+}
+.search-content .input-group__input {
+  padding: 0.7rem 2.9rem;
+  border: 0.5px solid #d2c7c1;
+  border-radius: 4px;
+  width: 100%;
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+.search-content .input-group__input:focus {
+  outline: none;
+}
+.search-content .form {
+  width: 450px;
+  margin: 0 auto;
+  display: flex;
+}
+.search-content .form div {
+  width: 100%;
+  display: flex;
+}
+.search-content .search-button {
+  padding: 0.78rem 1rem;
+  margin-left: -10px;
+  border: 1px solid var(--MainthemeGreen);
+  border-radius: 0 4px 4px 0;
+  background-color: #ea6564;
+  color: #fff;
+  font-weight: 700;
+}
+.search-content .search-button span img {
+  width: 15px;
+  height: auto;
+}
+
+.topics-section {
+  height: 50px;
+  background-color: #fff;
+}
+.topics-section-list {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  height: 100%;
+}
+.topics-section-list li {
+  list-style-type: none;
+  background-color: #d2c7c1;
+  width: 100px;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+.topics-section-list li:nth-child(1) {
+  text-align: start;
+  flex-basis: 180px;
+  background-color: white;
+  font-weight: 700;
+  place-items: inherit;
+}
+.topics-section-list li:hover {
+  background-color: rgba(210, 199, 193, 0.6) !important;
+}
+.topics-section-list li a {
+  text-decoration: none;
+}
+.topics-section-list .topics-active {
+  background-color: #dadada;
+}
+.topics-section-list .topics-active:hover {
+  background-color: #d2c7c1;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #ea6564;
+}
+.title .pin {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.pinned-picks {
+  padding: 0 15px;
+}
+.pinned-picks-content {
+  display: flex;
+  gap: 10px;
+}
+.pinned-picks-content .pinned-picks-pick {
+  position: relative;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 349.5px;
+}
+.pinned-picks-content .pinned-picks-pick .picked-image {
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+.pinned-picks-content .pinned-picks-pick .picked-image img {
+  width: 100%;
+  height: 150px;
+  border-radius: 20px 20px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.pinned-picks-content .pinned-picks-pick .picked-image .picked-comments-total {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  top: -15px;
+  right: 0;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  color: #ea6564;
+  font-weight: 700;
+}
+.pinned-picks-content .pinned-picks-pick .pinned-picks-info {
+  padding: 0.3rem 0.6rem;
+}
+
+.editors-picks-section {
+  margin-bottom: 15px;
+  padding: 0 15px;
+}
+
+.editor-picks {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  background-color: #D1C6C0;
+  padding: 20px 15px;
+}
+.editor-picks .editor-pick {
+  position: relative;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+  gap: 15px;
+}
+.editor-picks .editor-pick-img {
+  width: 200px;
+  height: 80px;
+}
+.editor-picks .editor-pick-img img {
+  border-radius: 20px 0 0 20px;
+  width: 200px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 62% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 62% 100%, 0 100%);
+}
+.editor-picks .editor-pick-info {
+  display: flex;
+  flex-direction: column;
+}
+.editor-picks .editor-pick-info .info-title {
+  height: 60px;
+  overflow: hidden;
+}
+.editor-picks .editors-pick-comments {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ea6564;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.latest-posts {
+  width: 100%;
+}
+.latest-posts .editor-picks {
+  background-color: #fdecd9;
+}
+
+.top-comment-author-post {
+  margin-bottom: 60px;
+  position: relative;
+}
+.top-comment-author-post .top-comment-author {
+  border-bottom: 2px solid #ea6564;
+  display: flex;
+  gap: 15px;
+  padding: 15px 30px;
+}
+.top-comment-author-post .top-comment-author .top-comment-img {
+  width: 60px;
+  height: 60px;
+}
+.top-comment-author-post .top-comment-author .top-comment-img img {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 60px;
+  height: 60px;
+}
+.top-comment-author-post .top-comment-author .author-meta-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: 700;
+}
+.top-comment-author-post .top-comment-author .author-meta-info h3 {
+  color: #ea6564;
+}
+.top-comment-author-post .top-comment-author .author-meta-info .meta-post-data {
+  display: flex;
+  gap: 5px;
+}
+.top-comment-author-post .top-content {
+  margin: 15px;
+}
+.top-comment-author-post .top-content .content-title {
+  background-color: #ea6564;
+  padding: 0.5rem 1rem;
+}
+.top-comment-author-post .top-content .content-title h2 {
+  color: #fff;
+}
+.top-comment-author-post .top-content .post-content {
+  border-radius: 0 0 20px 20px;
+  padding: 1.2rem 1rem;
+  background-color: #fff;
+}
+.top-comment-author-post .top-content .post-content p {
+  font-size: 16px;
+}
+.top-comment-author-post .topic-btn {
+  position: absolute;
+  right: 20px;
+  bottom: -50px;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.top-comment-author-post .topic-btn:hover {
+  background-color: #ea6564;
+}
+
+.new-topic {
+  margin: 1.5rem 0;
+}
+.new-topic .section-wrapper {
+  background-color: #fff;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  padding: 0.8rem 2rem;
+  width: 89%;
+}
+.new-topic .say-it-loud-form {
+  width: 89%;
+}
+.new-topic .say-it-loud-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.new-topic .say-it-loud-form form > div {
+  width: 623px;
+}
+.new-topic .say-it-loud-form form > div:nth-child(1) {
+  display: flex;
+  gap: 15px;
+  width: 638px;
+}
+.new-topic .say-it-loud-form form input, .new-topic .say-it-loud-form form textarea, .new-topic .say-it-loud-form form select {
+  padding: 0.5rem 0.4rem;
+  width: 100%;
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+  border: 1px solid #d2c7c1;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.new-topic .say-it-loud-form form input:focus-visible, .new-topic .say-it-loud-form form textarea:focus-visible, .new-topic .say-it-loud-form form select:focus-visible {
+  border: 1px solid red;
+}
+.new-topic .say-it-loud-form form input[type=text]:focus, .new-topic .say-it-loud-form form textarea:focus {
+  border: 2px solid #70a703 !important;
+}
+.new-topic .say-it-loud-form form .new-topic-btn {
+  padding: 0.8rem 4rem;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.search-form div {
+  gap: 4px !important;
+  margin-bottom: 15px;
+}
+.search-form div input {
+  border-radius: 5px !important;
+}
+.search-form #years {
+  width: 35%;
+  border-radius: 0 !important;
+  background-color: #dadada;
+  color: #fff;
+}
+.search-form #years:focus {
+  border: 1px solid black;
+}
+.search-form #years option {
+  background-color: #fff;
+  color: #000;
+}
+
+#medsection1 {
+  display: flex;
+  gap: 15px;
+  width: 1030px !important;
+}
+
+.archive-page {
+  width: 800px !important;
+  background: #fdecd9;
+}
+.archive-page .topics-section {
+  width: 710px;
+}
+.archive-page .topics-section-list li a {
+  color: #000 !important;
+}
+.archive-page .topics-section-list li a:hover {
+  text-decoration: none !important;
+}
+.archive-page .archive-wrapper {
+  background-color: #fdecd9 !important;
+}
+.archive-page .archive-wrapper h1 {
+  margin: 25px 15px;
+}
+.archive-page .archive-wrapper .archive {
+  width: 425px !important;
+  background-color: #fdecd9 !important;
+}
+.archive-page .archive-wrapper .archive .editor-picks {
+  width: 420px;
+  background-color: #fdecd9;
+  padding-top: 0;
+}
+.archive-page .archive-wrapper .archive .editor-picks .editor-pick {
+  gap: 0;
+}
+.archive-page .archive-wrapper .archive .editor-picks .editor-pick .editor-pick-img {
+  width: 165px;
+}
+.archive-page .archive-wrapper .archive .editor-picks .editor-pick .editor-pick-img img {
+  width: 165px;
+}
+.archive-page .archive-wrapper .archive .editor-picks .editor-pick .editor-pick-info {
+  gap: 5px !important;
+  padding: 0 0.86rem;
+}
+.archive-page .archive-wrapper .archive .editor-picks .editor-pick .editor-pick-info .info-title h2 {
+  font-size: 14px;
+}
+.archive-page .archive-wrapper .archive .editor-picks .editor-pick .editor-pick-info .meta-info p {
+  font-size: 12px;
+}
+.archive-page .archive-wrapper .archive .editor-picks .editor-pick .editors-pick-comments {
+  width: 30px;
+  height: 30px;
+}
+.archive-page #year-breakdown {
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: #fff;
+}
+.archive-page .calendar {
+  width: 100%;
+  height: 100%;
+}
+
+.register {
+  margin-bottom: 15px;
+}
+.register .register-wrapper {
+  margin: 15px 50px;
+}
+.register .register-wrapper .section-title p {
+  font-size: 15px;
+}
+.register .register-wrapper .say-it-loud-form form > div > input {
+  border-radius: 5px;
+  padding: 0.8rem 0.3rem;
+  width: 600px;
+}
+.register .register-wrapper .say-it-loud-form form > div:nth-child(3) {
+  margin: 10px 0;
+}
+.register .register-wrapper .say-it-loud-form form > div:nth-child(3) button {
+  border-radius: 20px;
+  padding: 0.8rem 3rem;
+  font-weight: 700;
+}
+.register .register-wrapper .forgot-pass {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 15px 0;
+}
+.register .register-wrapper .forgot-pass button {
+  border-radius: 50px;
+  transition: all 0.3s;
+  font-weight: 700;
+}
+.register .register-wrapper .forgot-pass button a {
+  text-decoration: none;
+  color: #fff;
+}
+.register .register-wrapper .forgot-pass p {
+  font-size: 15px;
+  padding-top: 5px;
+}/*# sourceMappingURL=style.css.map */

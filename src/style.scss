@@ -1,0 +1,553 @@
+@import './abstracts/variables';
+
+
+// Utility class
+hr{
+    border: 2px solid rgba($color: $bg-topics, $alpha: 0.5) ;
+    margin: 15px 0;
+}
+.wrapper{
+    background-color: $bg-inner;
+}
+.btn{
+    border: none;
+    background-color: $searchButton;
+    padding: 0.7rem 1.2rem;
+    color: $white;
+    cursor: pointer;
+
+}
+.meta-info{
+    display: flex;
+    justify-content: space-between;
+}
+// End of utility class
+// inner-content
+.bg-clr{
+    background-color: $bg-inner;
+}
+// End of inner content
+// search container 
+.search-content{
+    background-image: url('https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29uJTIwdHlwaW5nfGVufDB8fDB8fHww&w=1000&q=80');
+    background-position: center center;
+    background-size: cover;
+    height: 175px;
+    
+
+    .search-container {
+        display: grid;
+        place-items: center;
+        margin-bottom: 15px;
+        width: 100%;
+        height: 100%;
+      }
+      .search-container h3 span {
+        color: $searchButton;
+        border-bottom: 3px solid $searchButton;
+      }
+      
+      .input-group__input {
+        padding: 0.7rem 2.9rem;
+        border: 0.5px solid $bg-topics;
+        border-radius: 4px;
+        width: 100%;
+        font-family: Tahoma,Arial,Helvetica,sans-serif;
+        &:focus{
+            outline: none;
+        }
+    
+      }
+      .form{
+        width: 450px;
+        margin: 0 auto;
+        display: flex;
+          div{
+            width: 100%;
+            display: flex;
+          }
+      }
+      .search-button {
+        padding: 0.78rem 1rem;
+        margin-left: -10px;
+        border: 1px solid var(--MainthemeGreen);
+        border-radius: 0 4px 4px 0;
+        background-color: $searchButton;
+        color: $white ;
+        font-weight: 700;
+      }
+      .search-button span img {
+        width: 15px;
+        height: auto;
+      }
+  
+}
+// End of search container
+
+// Topics Section
+.topics-section{
+    height: 50px;
+    background-color: $white;
+    &-list{
+        display: flex;
+        // justify-content: space-evenly;
+        align-items: center;
+        gap: 7px;
+        height: 100%;
+        li{
+            list-style-type: none;
+            background-color: $bg-topics;
+            width: 100px;
+            height: 100%;
+            margin: 0;
+            text-align: center;
+            display: grid;
+            place-items: center;
+            font-size: 14px;
+            transition: all 0.5s;
+            
+            &:nth-child(1){
+                text-align: start;
+            flex-basis: 180px;
+            background-color: white;
+            font-weight: 700;
+            place-items: inherit;
+        }
+        &:hover{
+            background-color: rgba($color: $bg-topics, $alpha: 0.6)  !important;
+        }
+           
+            a{
+                text-decoration: none;
+
+            
+            }
+        }
+        .topics-active{
+            background-color: $gray;
+            &:hover{
+                background-color: $bg-topics;
+            }
+        }
+    }
+}
+// End of topics section
+
+// Pinned picks
+.title{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: $searchButton;
+
+    .pin{
+        width: 24px !important;
+        height: 24px !important;
+    }
+}
+.pinned-picks{
+    padding: 0 15px;
+    &-content{
+
+        display: flex;
+        gap: 10px;
+
+        .pinned-picks-pick{
+            position: relative;
+            background-color: $white;
+            border-radius:   20px ;
+
+
+        width: 349.5px;
+            .picked-image{
+                position: relative;
+                width: 100%;
+                height: 150px;
+
+                img{
+                    width: 100%;
+                    height: 150px;
+                    border-radius: 20px 20px 0 0;
+
+                    object-fit: cover;
+                }
+
+                .picked-comments-total{
+                    position: absolute;
+                    display: grid;
+                    place-items: center;
+                    top: -15px;
+                    right: 0;
+                    background-color: $white;
+                    width: 40px;
+                    height: 40px;
+                    text-align: center;
+                    border-radius: 50%;
+                    color: $searchButton;
+                    font-weight: 700;
+                }
+            }
+            .pinned-picks-info{
+                padding: 0.3rem 0.6rem ;
+
+              
+            }
+        }
+    }
+}
+// End of pinned picks
+
+
+// Editor's pick of the day 
+.editors-picks-section{
+    margin-bottom: 15px;
+    padding: 0 15px;
+
+}
+.editor-picks{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    background-color: #D1C6C0;
+    padding: 20px 15px;
+    .editor-pick{
+        position: relative;
+        background-color: #fff;
+        border-radius: 20px;
+        display: flex;
+        height: 80px;
+        width: 100%;
+        align-items: center;
+        gap: 15px;
+    
+        &-img{
+            width: 200px;
+            height: 80px;
+
+            img{
+                border-radius: 20px 0 0 20px;
+                width: 200px;
+                height: 80px;
+                object-fit: cover;
+                clip-path: polygon(0 0, 100% 0, 62% 100%, 0 100%);
+            }
+        }
+      &-info{
+        display: flex;
+        flex-direction: column;
+
+        .info-title{
+            height: 60px;
+            overflow: hidden;
+        }
+      }
+    }
+    .editors-pick-comments{
+        position: absolute;
+        right: -10px;
+        top: -10px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $searchButton;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        color: $white;
+    }
+}
+// End of editor's pick
+
+// LatestPost
+.latest-posts{
+    width: 100%;
+    .editor-picks{
+        background-color: $bg-inner;
+    }
+}
+// End of picks of the day
+
+// Top Post page
+.top-comment-author-post {
+    margin-bottom: 60px;
+    position: relative;
+
+    .top-comment-author{
+
+        border-bottom:2px solid $searchButton ;
+        display: flex;
+        gap: 15px;
+        padding: 15px 30px;
+        .top-comment-img{
+            width: 60px;
+            height: 60px;
+            img{
+
+                border-radius: 50%;
+                object-fit: cover;
+                width: 60px;
+                height: 60px;
+            }
+        }
+        .author-meta-info{
+            display: flex;
+            justify-content: center;
+            flex-direction:column;
+            font-weight: 700;
+
+            h3{
+                color: $searchButton;
+            }
+            .meta-post-data{
+                display: flex;
+                gap: 5px;
+            }
+        }
+    }
+    .top-content{
+        margin: 15px ;
+        .content-title{
+            background-color: $searchButton;
+            padding: 0.5rem 1rem;
+            
+            h2{
+                color: $white;
+            }
+        }
+        .post-content{
+            border-radius: 0 0 20px 20px;
+
+            padding: 1.2rem 1rem;
+            background-color: $white;
+
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+    .topic-btn{
+        position: absolute;
+        right: 20px;
+        bottom: -50px;
+        border-radius: 2px;
+        font-size: 16px;
+        font-weight: bold;
+        &:hover{
+            background-color: $searchButton;
+        }
+    }
+}
+// End Top Post page
+
+// New Topic page 
+.new-topic{
+    margin: 1.5rem 0;
+    .section-wrapper{
+        background-color: $white;
+        margin: 15px ;
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+        padding: 0.8rem 2rem;
+        width: 89%;
+    }
+    .say-it-loud-form {
+        width: 89%;
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            & >div{
+                width: 623px;
+            }
+            & > div:nth-child(1){
+                display: flex;
+                gap: 15px;
+                width: 638px;
+                
+            }
+            input, textarea, select{
+                padding: 0.5rem 0.4rem;
+                width: 100%;
+                font-family: Tahoma,Arial,Helvetica,sans-serif;
+                border: 1px solid $bg-topics;
+                border-radius: 10px;
+                transition: all 0.3s;
+                &:focus-visible{
+                    border: 1px solid red;
+                }
+            }
+            input[type=text]:focus , textarea:focus {
+                border: 2px solid #70a703 !important;
+              }
+
+              .new-topic-btn{
+                padding: 0.8rem 4rem;
+                border-radius: 10px;
+                transition: all 0.3s;
+              }
+        }
+    }
+
+
+}
+
+// Search page
+.search-form{
+    div{
+        gap: 4px !important;
+        margin-bottom: 15px;
+        input{
+            border-radius: 5px !important;
+        }
+    }
+    #years{
+        width: 35%;
+        border-radius: 0 !important;
+        background-color: $gray;
+        color: $white;
+
+        &:focus{
+            border: 1px solid black;
+        }
+        option{
+            background-color: $white;
+            color: #000;
+        }
+    }
+}
+
+// archive-page 
+#medsection1{
+    display: flex;
+    gap: 15px;
+    width: 1030px !important;
+}
+
+// Archive page
+.archive-page{
+    width: 800px !important;
+    background: $bg-inner;
+    .topics-section{
+        width: 710px; 
+        
+        &-list{
+            li{
+                a{
+
+                    color: #000 !important;
+
+                    &:hover{
+                        text-decoration: none !important;
+                    }
+                }
+            }
+        }
+      }
+    .archive-wrapper{
+        background-color: $bg-inner !important;
+    // width: 100%;
+    // height: 100%;
+    // margin: 1rem 0;
+    
+       
+         h1{
+        margin: 25px 15px;
+        }
+        .archive{
+            width: 425px !important;
+    background-color: $bg-inner !important;
+            
+            .editor-picks{
+                width: 420px;
+                background-color: $bg-inner;
+                padding-top: 0;
+                .editor-pick{
+                    gap: 0;
+                    .editor-pick-img{
+                        width: 165px;
+    
+                        img{
+                            width: 165px;
+                        }
+                    }
+                    .editor-pick-info{
+                        gap: 5px !important;
+                        padding: 0 0.86rem;
+                        .info-title h2{
+                            font-size: 14px;
+                        }
+                        .meta-info p{
+                            font-size: 12px;
+                        }
+                    }
+                    .editors-pick-comments{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+    #year-breakdown{
+        margin-left: 15px;
+        margin-right: 15px;
+        background-color: #fff;
+    }
+    .calendar{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// Register Page
+.register{
+    margin-bottom: 15px;
+
+    .register-wrapper{
+        margin: 15px 50px;
+    
+        .section-title{
+            p{
+                font-size: 15px;
+            }
+        }
+        .say-it-loud-form form{
+            & >div>input{
+                border-radius: 5px;
+                // margin: 20px 0;
+                padding: 0.8rem 0.3rem ;
+                width: 600px;
+            }
+            & >div:nth-child(3){
+                margin: 10px 0;
+                button{
+                    border-radius: 20px;
+                    padding: 0.8rem 3rem;
+                    font-weight: 700;
+                }
+            }
+        }
+        .forgot-pass{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin: 15px 0;
+
+            button{
+                border-radius: 50px;
+                transition: all 0.3s;
+                font-weight: 700;
+
+                a{
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+            p{
+                font-size: 15px;
+                padding-top: 5px;
+            }
+        }
+    }
+}
